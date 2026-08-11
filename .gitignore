@@ -1,0 +1,48 @@
+# ── 依赖 ──
+node_modules/
+.pnp/
+.pnp.js
+
+# ── 构建产物 ──
+dist/
+build/
+out/
+*.tsbuildinfo
+*.cache
+
+# ── 测试 / 覆盖率 / 日志 ──
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── 环境变量 / 密钥（模板 .env.example 保留入库） ──
+.env
+.env.local
+.env.*.local
+
+# ── 端口本地覆盖（不入库，优先级高于 config/ports.env） ──
+config/ports.env.local
+
+# ── 云同步落盘数据（含用户账号哈希与轨迹），不入库 ──
+data/
+
+# ── 密钥 / 证书 ──
+*.pem
+*.key
+
+# ── IDE / 编辑器 ──
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── 操作系统 ──
+.DS_Store
+Thumbs.db
+
+# ── 进程 / 临时 ──
+*.pid
+*.seed

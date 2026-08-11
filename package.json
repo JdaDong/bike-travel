@@ -1,0 +1,19 @@
+{
+  "name": "bike-travel",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:server": "npm -w @bike-travel/server run dev",
+    "dev:web": "npm -w @bike-travel/web run dev",
+    "start": "sh scripts/start.sh",
+    "stop": "sh scripts/stop.sh",
+    "restart": "sh scripts/restart.sh",
+    "ports": "cat config/ports.env",
+    "logs": "sh scripts/logs.sh",
+    "typecheck": "npm -w @bike-travel/shared run typecheck && npm -w @bike-travel/server run typecheck && npm -w @bike-travel/web run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
